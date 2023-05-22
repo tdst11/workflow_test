@@ -16,3 +16,12 @@ jobs:
     steps:
       - name: test
         run: echo "test"
+
+
+  Explore-GitHub-Actions-Run-Bash-Scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: actions/checkout@v1
+        run: PATH/script.sh
+        shell: bash
+        
