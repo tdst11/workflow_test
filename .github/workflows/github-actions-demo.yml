@@ -21,6 +21,5 @@ jobs:
   Explore-GitHub-Actions-Run-Bash-Scripts:
     runs-on: ubuntu-latest
     steps:
-      - name: actions/checkout@v1
+      - name: ttt
         run: bash ${GITHUB_WORKSPACE}/.github/script.sh
-        shell: bash
