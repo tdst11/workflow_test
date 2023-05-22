@@ -22,5 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: actions/checkout@v1
-        run: bash ${GITHUB_WORKSPACE}/script.sh
+        run: bash ${GITHUB_WORKSPACE}/.github/script.sh
         shell: bash
