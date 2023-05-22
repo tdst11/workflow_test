@@ -10,16 +10,11 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: ttt
+        run: bash ${GITHUB_WORKSPACE}/.github/script.sh
 
   Explore-GitHub-Actions-J2:
     runs-on: ubuntu-latest
     steps:
       - name: test
         run: echo "test"
-
-
-  Explore-GitHub-Actions-Run-Bash-Scripts:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ttt
-        run: bash ${GITHUB_WORKSPACE}/.github/script.sh
