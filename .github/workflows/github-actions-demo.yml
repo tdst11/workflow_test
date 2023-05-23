@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions
 on: [push]
 jobs:
   Explore-GitHub-Actions-J1:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -14,7 +14,7 @@ jobs:
         run: bash ${GITHUB_WORKSPACE}/.github/script.sh
 
   Explore-GitHub-Actions-J2:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: test
         run: echo "test"
